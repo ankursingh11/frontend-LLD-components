@@ -8,7 +8,12 @@ const Body = () => {
     <div>
       <Navbar />
       <div className="mt-10 mx-10">
-        <Outlet />
+        <span className="bg-slate-200 rounded-lg p-3 text-center">
+          In this application, the <code>'/about'</code> route is protected
+        </span>
+        <div className="my-6">
+          <Outlet />
+        </div>
       </div>
     </div>
   );
