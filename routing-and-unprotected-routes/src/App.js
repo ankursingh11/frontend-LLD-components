@@ -1,5 +1,5 @@
 import "./App.css";
-import About from "./components/About";
+import Profile from "./components/Profile";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
 import Body from "./components/Body";
@@ -16,8 +16,8 @@ const appRouter = createBrowserRouter([
     element: <Body />,
     children: [
       {
-        path: "/about",
-        element: <ProtectedRoute element = {<About />} />,
+        path: "/profile",
+        element: <ProtectedRoute element = {<Profile />} />,
       },
       {
         path: "/contact",

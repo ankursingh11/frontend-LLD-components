@@ -1,6 +1,6 @@
 import React from 'react'
 
-const About = () => {
+const Profile = () => {
   return (
     <div className = "text-3xl font-bold">
       About Page
@@ -8,4 +8,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Profile

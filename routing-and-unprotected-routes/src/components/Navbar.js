@@ -8,7 +8,7 @@ const Navbar = () => {
       <div>
         <ul className="flex text-xl">
           <li className="mx-2 cursor-pointer hover:drop-shadow-xl">
-            <Link to="/about">About</Link>
+            <Link to="/profile">Profile</Link>
           </li>
 
           <li className="mx-2 cursor-pointer hover:drop-shadow-xl">
