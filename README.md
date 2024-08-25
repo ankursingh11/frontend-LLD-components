@@ -1,2 +1,2 @@
 # namaste-frontend-system-design-LLD-components
- Practicing LLD Components from the namastedev.com
+ Practicing LLD Components from the [namastedev.com](https://namastedev.com/)
