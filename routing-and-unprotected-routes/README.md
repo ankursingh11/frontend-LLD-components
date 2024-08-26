@@ -18,7 +18,7 @@ It is always better to have a wrapper and then encapsulate your `protected-route
 <Route/>
 ``` 
 ```
-ProtectRoute.js
+ProtectedRoute.js
 
 const ProtectedRoute = ({element}) => { 
 	const isAuthenticated = false; 
