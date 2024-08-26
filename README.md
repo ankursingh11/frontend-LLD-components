@@ -4,7 +4,7 @@
  ![giphy](https://github.com/user-attachments/assets/0363e55e-2577-4fea-bf9a-21398b9d60af)
 
 
-|        LLD Component        |ASCII                          |
+|        LLD Component        |Project Link                        |
 |----------------|-------------------------------|
 |accordion|[link](https://66cc2fb62f99f1aaac90fef0--inspiring-rabanadas-24776c.netlify.app/)           |           |
 |infinite-scroll         |[link](https://66cc39f8e850fcadba4465b1--dancing-cheesecake-03e2ed.netlify.app/)           |
