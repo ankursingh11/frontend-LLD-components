@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { DATA } from "../config/accordionData";
 import AccordionItem from "./AccordionItem";
-import grid from "../grid.jpg";
 
 const Body = () => {
   const [openIndex, setOpenIndex] = useState(0);
