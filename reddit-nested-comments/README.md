@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+## reddit-nested-comments 🤓🤘
+Now to implement an UI like reddit nested comment<br/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="500" alt="nested-comments" src="https://github.com/user-attachments/assets/79beaf02-1cd0-4ce3-a3f6-bfd91ee8cb1f">
 
-## Available Scripts
 
-In the project directory, you can run:
+we first need to understand the type of `data structure` in which we should store the comment and the replies data.<br/>
+For this, i used a static data in my `config` and implemented the following data structure
+```
+const MESSAGES = [
+ {
+  comment : "",
+  replies : []
+ }
+]
+``` 
+and here replies could have something like this nested structure : <br/>
+```
+replies : [
+ {
+  comment : "",
+  replies : []
+ }
+]
+```
+Now to render this onto the UI, we can just loop on the above `COMMENTS` array and whenever we find `replies` which has a `length > 0`, then can recursively call on it. Like this : <br/>
+```
+const CommentList = ({comment}) => {
+ return (
+  <div>
+   <p>{comment.comment}</p>
+   {comment.replies.length > 0 && comment.replies.map(c => <CommentList comment = {c}/>}
+  </div>
+ )
+}
+```
+Here is a working [link](https://66cd7f3cd1e9df9c72803692--fastidious-gelato-7679e7.netlify.app/) for this project and I used this [reddit source](https://www.reddit.com/r/personalfinanceindia/comments/1f1u8iz/how_people_are_living_in_20k_rupees_a_month/) for reference.
 
-### `npm start`
+[video-preview.webm](https://github.com/user-attachments/assets/916804a8-2741-4be9-b88d-6052fa3519da)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
