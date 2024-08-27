@@ -13,3 +13,4 @@
 |shimmer-ui          |[link](https://66cae774d4764d7ebacdf3fc--gilded-crostata-3460e9.netlify.app/)|
 |reddit-nested-comments | [link](https://66cd7f3cd1e9df9c72803692--fastidious-gelato-7679e7.netlify.app/) |
 |image-slider | [link](https://66cd8fe20a0f55b67de2ee4f--gregarious-pithivier-4ae3f1.netlify.app/) |
+|pagination | [link](https://66cdbe7399b663ed0d1c7382--glowing-llama-e5b21f.netlify.app/) |
