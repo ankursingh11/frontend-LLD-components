@@ -23,6 +23,6 @@ and suppose we are getting lets say N results from the API call and from this we
 ```
 numOfPages = Math.ceil(N/LIMIT)
 ```
-A working demo of this project is hosted on this [link](https://66cdbe7399b663ed0d1c7382--glowing-llama-e5b21f.netlify.app/)
+A working demo of this project is hosted on this [link](https://66cdbe7399b663ed0d1c7382--glowing-llama-e5b21f.netlify.app/) and I have used [DummyJSON API](https://dummyjson.com/docs/products) for data
 
 [video-preview.webm](https://github.com/user-attachments/assets/09b044ef-ee50-4663-82a5-184482c2b7f4)
