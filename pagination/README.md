@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+## pagination 🤓🤘
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+There are different types of pagination
+1. frontend pagination
+2. server-side pagination
+3. offset pagination
+4. cursor pagination
+   
+For more info regarding pagination, you can visit this [link](https://glamorous-toucan-f09.notion.site/Pagination-d96d571ff4aa471b9768a2d8b27b46da), where i have talk more about different pagination techniques and there pros and cons.<br/>
 
-## Available Scripts
+To implement this project, i have used `offset pagination` in which we make an API call along with query params like `limit` & `offset` which basically tells how much data i want and how much data should i skip respectively.<br/>
+Now when we do `offset pagination`, we need to keep in mind some terminologies like :
+1. How much data i want ?
+2. What Should be the number of pages ?
+<br/>
+For specifying the amount of data i want, i kept that as a constant variable<br/>
 
-In the project directory, you can run:
+```
+const LIMIT = 10;
+```
 
-### `npm start`
+and suppose we are getting lets say N results from the API call and from this we can calculate the number of pages <br/>
+```
+numOfPages = Math.ceil(N/LIMIT)
+```
+A working demo of this project is hosted on this [link](https://66cdbe7399b663ed0d1c7382--glowing-llama-e5b21f.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[video-preview.webm](https://github.com/user-attachments/assets/09b044ef-ee50-4663-82a5-184482c2b7f4)
