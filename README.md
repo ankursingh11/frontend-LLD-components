@@ -14,3 +14,4 @@
 |reddit-nested-comments | [link](https://66cd7f3cd1e9df9c72803692--fastidious-gelato-7679e7.netlify.app/) |
 |image-slider | [link](https://66cd8fe20a0f55b67de2ee4f--gregarious-pithivier-4ae3f1.netlify.app/) |
 |pagination | [link](https://66cdbe7399b663ed0d1c7382--glowing-llama-e5b21f.netlify.app/) |
+| autocomplete-and-search-bar | [link](https://66cee6816a57c211383de177--tangerine-kulfi-ddd790.netlify.app/)|
